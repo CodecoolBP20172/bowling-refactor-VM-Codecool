@@ -19,14 +19,12 @@ def score(game):
                 else:
                     result += get_value(game[roll+2])
         last = get_value(game[roll])
-        if not in_first_half:
+        if game[roll] == 'X' or game[roll] == 'x' or not in_first_half:
             frame += 1
             in_first_half = True
         else:
             in_first_half = False
-        if game[roll] == 'X' or game[roll] == 'x':
-            in_first_half = True
-            frame += 1
+        
     return result
 
 
