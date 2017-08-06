@@ -38,4 +38,3 @@ def get_value(char):
     else:
         raise ValueError()
 
-score("XXXXXXXXXXXX")
